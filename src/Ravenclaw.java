@@ -28,14 +28,18 @@ public class Ravenclaw extends Hogwarts {
         return creation;
     }
 
+    /**
+     * Compare Ravenclaw faculty students
+     * @param student - Ravenclaw object (student)
+     */
     public void compareFacultyStudent(Ravenclaw student) {
         int s1Points = this.getMind() + this.getWisdom() + this.getWit() + this.getCreation();
         int s2Points = student.getMind() + student.getWisdom() + student.getWit() + this.getCreation();
 
         if(s1Points > s2Points) {
-            System.out.println(this.getStudentName() + " is a better Hufflepuff than " + student.getStudentName());
+            System.out.println(this.getStudentName() + " is a better Ravenclaw than " + student.getStudentName());
         } else if (s1Points < s2Points){
-            System.out.println(student.getStudentName() + " is a better Hufflepuff than " + this.getStudentName());
+            System.out.println(student.getStudentName() + " is a better Ravenclaw than " + this.getStudentName());
         } else {
             System.out.println("Students have the same score");
         }

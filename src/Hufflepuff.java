@@ -22,6 +22,10 @@ public class Hufflepuff extends Hogwarts {
         return honor;
     }
 
+    /**
+     * Compare Hufflepuff faculty students
+     * @param student - Hufflepuff object (student)
+     */
     public void compareFacultyStudent(Hufflepuff student) {
         int s1Points = this.getHardWork() + this.getHonor() + this.getLoyalty();
         int s2Points = student.getHardWork() + student.getHonor() + student.getLoyalty();

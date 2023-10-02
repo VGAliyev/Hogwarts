@@ -23,18 +23,17 @@ public class Hogwarts {
 
     /**
      * Compare students by spell power and transgression distance
-     * @param s1 - Hogwarts object (student 1)
-     * @param s2 - Hogwarts object (student 2)
+     * @param student - Hogwarts object (student)
      */
-    public void compareStudentsBySPAndTD(Hogwarts s1, Hogwarts s2) {
+    public void compareStudentsBySPAndTD(Hogwarts student) {
         String spellPowerString;
 
-        if (s1.getSpellPower() > s2.getSpellPower()) {
-            spellPowerString = s1.getStudentName() + " has more spellcasting power than " + s2.getStudentName();
+        if (this.getSpellPower() > student.getSpellPower()) {
+            spellPowerString = this.getStudentName() + " has more spellcasting power than " + student.getStudentName();
         } else {
-            spellPowerString = s1.getStudentName() + " has less spellcasting power than " + s2.getStudentName();
+            spellPowerString = this.getStudentName() + " has less spellcasting power than " + student.getStudentName();
         }
-        if (s1.getTransgressionDistance() > s2.getTransgressionDistance()) {
+        if (this.getTransgressionDistance() > student.getTransgressionDistance()) {
             spellPowerString += ", and greater transgression distance.";
         } else {
             spellPowerString += ", and less transgression distance.";

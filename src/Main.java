@@ -79,6 +79,39 @@ public class Main {
 
         // Compare students of Ravenclaw
         ravenclaws[0].compareFacultyStudent(ravenclaws[2]);
+
+        Slytherin[] slytherins = {
+                new Slytherin("Draco Malfoy",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+                new Slytherin("Graham Montague",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+                new Slytherin("Gregory Goyle",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+        };
+
+        // Compare students of Slytherin
+        slytherins[0].compareFacultyStudent(slytherins[2]);
+
+        // Compare by spell power and transgression distance
+        gryffindors[0].compareStudentsBySPAndTD(slytherins[0]);
     }
 
     // Generator random numbers

@@ -22,6 +22,10 @@ public class Gryffindor extends Hogwarts {
         return bravery;
     }
 
+    /**
+     * Compare Gryffindor faculty students
+     * @param student - Gryffindor object (student)
+     */
     public void compareFacultyStudent(Gryffindor student) {
         int s1Points = this.getBravery() + this.getHonor() + this.getNobility();
         int s2Points = student.getBravery() + student.getHonor() + student.getNobility();
