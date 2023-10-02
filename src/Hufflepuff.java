@@ -1,13 +1,13 @@
 public class Hufflepuff extends Hogwarts {
     private final int hardWork;
     private final int loyalty;
-    private final int honor;
+    private final int honesty;
 
-    public Hufflepuff(String studentName, int spellPower, int transgressionDistance, int hardWork, int loyalty, int honor) {
+    public Hufflepuff(String studentName, int spellPower, int transgressionDistance, int hardWork, int loyalty, int honesty) {
         super(studentName, spellPower, transgressionDistance);
         this.hardWork = hardWork;
         this.loyalty = loyalty;
-        this.honor = honor;
+        this.honesty = honesty;
     }
 
     public int getHardWork() {
@@ -18,8 +18,8 @@ public class Hufflepuff extends Hogwarts {
         return loyalty;
     }
 
-    public int getHonor() {
-        return honor;
+    public int getHonesty() {
+        return honesty;
     }
 
     /**
@@ -27,8 +27,8 @@ public class Hufflepuff extends Hogwarts {
      * @param student - Hufflepuff object (student)
      */
     public void compareFacultyStudent(Hufflepuff student) {
-        int s1Points = this.getHardWork() + this.getHonor() + this.getLoyalty();
-        int s2Points = student.getHardWork() + student.getHonor() + student.getLoyalty();
+        int s1Points = this.getHardWork() + this.getHonesty() + this.getLoyalty();
+        int s2Points = student.getHardWork() + student.getHonesty() + student.getLoyalty();
 
         if(s1Points > s2Points) {
             System.out.println(this.getStudentName() + " is a better Hufflepuff than " + student.getStudentName());

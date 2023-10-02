@@ -21,6 +21,10 @@ public class Hogwarts {
         return transgressionDistance;
     }
 
+    public void printStudentInformation(Hogwarts student) {
+        // To do
+    }
+
     /**
      * Compare students by spell power and transgression distance
      * @param student - Hogwarts object (student)
