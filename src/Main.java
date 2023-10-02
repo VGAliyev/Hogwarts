@@ -52,6 +52,33 @@ public class Main {
 
         // Compare students of Hufflepuff
         hufflepuffs[1].compareFacultyStudent(hufflepuffs[2]);
+
+        Ravenclaw[] ravenclaws = {
+                new Ravenclaw("Zhou Chang",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+                new Ravenclaw("Padma Patil",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+                new Ravenclaw("Marcus Belby",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+        };
+
+        // Compare students of Ravenclaw
+        ravenclaws[0].compareFacultyStudent(ravenclaws[2]);
     }
 
     // Generator random numbers
