@@ -28,6 +28,30 @@ public class Main {
 
         // Compare students of Gryffindor
         gryffindors[0].compareFacultyStudent(gryffindors[1]);
+
+        Hufflepuff[] hufflepuffs = {
+                new Hufflepuff("Zachariah Smith",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+                new Hufflepuff("Cedric Diggory",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+                new Hufflepuff("Justin Finch-Fletchley",
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100),
+                        getRandomNum(0, 100)),
+        };
+
+        // Compare students of Hufflepuff
+        hufflepuffs[1].compareFacultyStudent(hufflepuffs[2]);
     }
 
     // Generator random numbers
