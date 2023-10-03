@@ -38,6 +38,11 @@ public class PrintService {
         System.out.println();
     }
 
+    /**
+     * Printing base information of student
+     * @param student       - Hogwarts object (student)
+     * @param facultyName   - Faculty name (Gryffindor, Hufflepuff, Ravenclaw or Slytherin)
+     */
     private void baseInformation(Hogwarts student, String facultyName) {
         System.out.printf("Student %s is a %s student\n", student.getStudentName(), facultyName);
         System.out.printf("He has a spellcasting power of %d and a transgression range of %d feet.\n",

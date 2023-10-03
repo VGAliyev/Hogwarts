@@ -112,6 +112,16 @@ public class Main {
 
         // Compare by spell power and transgression distance
         gryffindors[0].compareStudentsBySPAndTD(slytherins[0]);
+
+        // Information by students
+        PrintService ps = new PrintService();
+        ps.printStudentInformation(slytherins[2]);
+        System.out.println();
+        ps.printStudentInformation(gryffindors[1]);
+        System.out.println();
+        ps.printStudentInformation(ravenclaws[0]);
+        System.out.println();
+        ps.printStudentInformation(hufflepuffs[1]);
     }
 
     // Generator random numbers
