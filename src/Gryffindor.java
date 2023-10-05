@@ -22,17 +22,19 @@ public class Gryffindor extends Hogwarts {
         return bravery;
     }
 
+    @Override
+    public int calculateSpecificAbilitiesSum() {
+        return getBravery() + getHonor() + getNobility();
+    }
+
     /**
      * Compare Gryffindor faculty students
      * @param student - Gryffindor object (student)
      */
     public void compareFacultyStudent(Gryffindor student) {
-        int s1Points = this.getBravery() + this.getHonor() + this.getNobility();
-        int s2Points = student.getBravery() + student.getHonor() + student.getNobility();
-
-        if(s1Points > s2Points) {
+        if(this.calculateSpecificAbilitiesSum() > student.calculateSpecificAbilitiesSum()) {
             System.out.println(this.getStudentName() + " is a better Gryffindor than " + student.getStudentName());
-        } else if (s1Points < s2Points){
+        } else if (this.calculateSpecificAbilitiesSum() < student.calculateSpecificAbilitiesSum()){
             System.out.println(student.getStudentName() + " is a better Gryffindor than " + this.getStudentName());
         } else {
             System.out.println("Students have the same score");

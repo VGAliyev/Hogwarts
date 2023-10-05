@@ -22,17 +22,19 @@ public class Hufflepuff extends Hogwarts {
         return honesty;
     }
 
+    @Override
+    public int calculateSpecificAbilitiesSum() {
+        return getHardWork() + getHonesty() + getLoyalty();
+    }
+
     /**
      * Compare Hufflepuff faculty students
      * @param student - Hufflepuff object (student)
      */
     public void compareFacultyStudent(Hufflepuff student) {
-        int s1Points = this.getHardWork() + this.getHonesty() + this.getLoyalty();
-        int s2Points = student.getHardWork() + student.getHonesty() + student.getLoyalty();
-
-        if(s1Points > s2Points) {
+        if(this.calculateSpecificAbilitiesSum() > student.calculateSpecificAbilitiesSum()) {
             System.out.println(this.getStudentName() + " is a better Hufflepuff than " + student.getStudentName());
-        } else if (s1Points < s2Points){
+        } else if (this.calculateSpecificAbilitiesSum() < student.calculateSpecificAbilitiesSum()){
             System.out.println(student.getStudentName() + " is a better Hufflepuff than " + this.getStudentName());
         } else {
             System.out.println("Students have the same score");

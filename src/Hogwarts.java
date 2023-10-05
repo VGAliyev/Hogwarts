@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private final String studentName;
     private final int spellPower;
     private final int transgressionDistance;
@@ -41,4 +41,6 @@ public class Hogwarts {
 
         System.out.println(spellPowerString);
     }
+
+    public abstract int calculateSpecificAbilitiesSum();
 }

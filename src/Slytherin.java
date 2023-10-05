@@ -34,17 +34,19 @@ public class Slytherin extends Hogwarts {
         return lustForPower;
     }
 
+    @Override
+    public int calculateSpecificAbilitiesSum() {
+        return getCunning() + getDetermination() + getAmbition() + getResourcefulness() + getLustForPower();
+    }
+
     /**
      * Compare Slytherin faculty students
      * @param student - Slytherin object (student)
      */
     public void compareFacultyStudent(Slytherin student) {
-        int s1Points = this.getCunning() + this.getDetermination() + this.getAmbition() + this.getResourcefulness() + this.getLustForPower();
-        int s2Points = student.getCunning() + student.getDetermination() + student.getAmbition() + student.getResourcefulness() + student.getLustForPower();
-
-        if(s1Points > s2Points) {
+        if(this.calculateSpecificAbilitiesSum() > student.calculateSpecificAbilitiesSum()) {
             System.out.println(this.getStudentName() + " is a better Slytherin than " + student.getStudentName());
-        } else if (s1Points < s2Points){
+        } else if (this.calculateSpecificAbilitiesSum() < student.calculateSpecificAbilitiesSum()){
             System.out.println(student.getStudentName() + " is a better Slytherin than " + this.getStudentName());
         } else {
             System.out.println("Students have the same score");
